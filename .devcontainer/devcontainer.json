@@ -1,7 +1,9 @@
 {
   "name": "Laravel and NodeJS Spec-Kit Lab",
-  // Cukup ubah 8.3 menjadi 8.4 jika ingin beralih ke PHP 8.4
-  "image": "mcr.microsoft.com/devcontainers/php:1-8.3-bookworm",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
   
   "features": {
     // Otomatis menginstal Node.js LTS (v22) sekaligus NVM (Node Version Manager)
